@@ -12,11 +12,11 @@
 ####Field Trip Example (Complex/Outer Join)
 >Now imagine another scenario where the class is going on a field trip. The cost of the field trip is $10 per student. As a teacher, we want to keep track of which students have paid AND which students still need to pay.
 
-Everything we've done up until this point looks like the Grade Example. This is an inner join. We only want the students with a certain grade. You can imagine a Vinn Diagram where one circle is "Grades" and another circle is "Students". We only want the overlapping (or "inner") parts of the two circles.
+Everything we've done up until this point looks like the Grade Example. This is an inner join. We only want the students with a certain grade. You can imagine a Venn Diagram where one circle is "Grades" and another circle is "Students". We only want the overlapping (or "inner") parts of the two circles.
 
 Complex joins are useful and important when it comes to situations like the Field Trip Example. Sticking with the Venn Diagrams, we can think about "Students" as one circle and "Payments" as another circle. A complex join (or outer join) will return the overlap between the two circles AND the rest (or the "outer" part) of the "Students" circle as well.
 
-We'll elaborate more on visualizing joins in the Vin Diagrams section below.
+We'll elaborate more on visualizing joins in the Venn Diagrams section below.
 
 ##Overview
 A complex join in SQL is also referred to as an outer join. It is not necessarily more complex than an inner join. It is referred to as "complex" simply because SQL is conducting an inner join in addition to gathering a little more information from one or more tables. What is that extra bit of information? We will discover this by looking at the difference between outer and inner joins.
