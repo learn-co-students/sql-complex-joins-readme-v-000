@@ -14,7 +14,11 @@
 
 Everything we've done up until this point looks like the Grade Example. This is an inner join. We only want the students with a certain grade. You can imagine a Venn Diagram where one circle is "Grades" and another circle is "Students". We only want the overlapping (or "inner") parts of the two circles.
 
+![](http://readme-pics.s3.amazonaws.com/Grade%20example%20Venn%20Diagram.png)
+
 Complex joins are useful and important when it comes to situations like the Field Trip Example. Sticking with the Venn Diagrams, we can think about "Students" as one circle and "Payments" as another circle. A complex join (or outer join) will return the overlap between the two circles AND the rest (or the "outer" part) of the "Students" circle as well.
+
+![](http://readme-pics.s3.amazonaws.com/Payment%20example%20Venn%20Diagram.png)
 
 We'll elaborate more on visualizing joins in the Venn Diagrams section below.
 
@@ -117,20 +121,19 @@ It is helpful to think about our queries as a Venn Diagram. Each table can be re
 
 An Inner Join just returns the overlapping areas of the Venn Diagram.
 
-<image>
+![](http://readme-pics.s3.amazonaws.com/Inner%20Join%20Venn%20Diagram.png)
 
 A Left Outer Join returns all the the data from the left circle, and it includes the overlapping information from the right circle.
 
-<image>
+![](http://readme-pics.s3.amazonaws.com/Left%20Outer%20Join%20Venn%20Diagram.png)
 
 A Right Outer Join returns all the the data from the right circle, and it includes the overlapping information from the left circle.
 
-<image>
+![](http://readme-pics.s3.amazonaws.com/Right%20Outer%20Join%20Venn%20Diagram.png)
 
 A Full Outer Join returns all the data from all the tables, including the overlapping data.
 
-<image>
-
+![](http://readme-pics.s3.amazonaws.com/Full%20Outer%20Join%20Venn%20Diagram.png)
 
 ##Examples
 ###Create Our Students Table
