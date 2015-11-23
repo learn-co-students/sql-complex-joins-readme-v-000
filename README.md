@@ -56,7 +56,7 @@ teacher_id  |  student_id
 ```
 
 ###Outer Join
-Outer Joins, on the other hand, will return all of the matching rows AND all of the additional rows from the specified table. Which table/additional rows are determined by the type of outer join. There are are three types of outer joins: Left Outer Join, Right Outer Join, and Full Outer Join.
+Outer Joins, on the other hand, will return all of the matching rows AND all of the additional rows from the specified table. Which table/additional rows are determined by the type of outer join. There are three types of outer joins: Left Outer Join, Right Outer Join, and Full Outer Join.
 
 ####Left Outer Join
 This is the most common outer join, and the one you'll use most often. This returns the normal inner join result and also ***returns all of the rows from the left-most (i.e. first mentioned) table***.
