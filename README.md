@@ -264,3 +264,5 @@ id    teacher_name   id      name     teacher_id
 2	     Joe	     4       Sara         1
 NULL     NULL	     NULL    NULL         NULL		              
 ```
+
+<a href='https://learn.co/lessons/sql-complex-joins-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
