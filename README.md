@@ -165,11 +165,11 @@ INSERT INTO students (name, teacher_id)
 id               name        teacher_id            
 ---------------  ----------  ----------  
 1                Dave           1           
-2                Jess           2              
+2                Jessie         1              
 3                Bob            1          
 4                Sara           2  
 5                Rob            2
-6                Alexis        Null             
+6                Alexis                     
 ```
 
 ###Create Our Teachers Table
