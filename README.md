@@ -47,7 +47,7 @@ INNER JOIN Students
 ON Teacher.teacher_id = Student.teacher_id;
 ```
 
-This query returns only the teacher with the `id = 1` because students 1, 2, and 3 are all in the first teacher's class.
+This query returns only the teacher with the `id = 1` because student 1 is in the first teacher's class.
 
 ```
 teacher_id  |  student_id          
