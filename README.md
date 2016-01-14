@@ -262,7 +262,8 @@ id    teacher_name   id      name     teacher_id
 1	     Steven	  	 3       Jess         1
 2	     Joe	     5       Rob          1
 2	     Joe	     4       Sara         1
-NULL     NULL	     NULL    NULL         NULL		              
+3	   Jeff	    	 NULL    NULL         NULL	NULL
+NULL	NULL	6		Alexis	NULL
 ```
 
 <a href='https://learn.co/lessons/sql-complex-joins-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
