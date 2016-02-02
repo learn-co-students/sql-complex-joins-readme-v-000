@@ -47,7 +47,7 @@ INNER JOIN Students
 ON Teacher.teacher_id = Student.teacher_id;
 ```
 
-This query returns only the teacher with the `id = 1` because student 1 is in the first teacher's class.
+This query returns only the teacher with the `id = 1` because student 2 is in the first teacher's class.
 
 ```
 teacher_id  |  student_id          
@@ -266,4 +266,6 @@ id    teacher_name   id      name     teacher_id
 NULL	NULL	6		Alexis	NULL
 ```
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-complex-joins-readme' title='Complex Joins in SQL'>Complex Joins in SQL</a> on Learn.co and start learning to code for free.</p>
+<a href='https://learn.co/lessons/sql-complex-joins-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-complex-joins-readme'>SQL Complex Joins</a> on Learn.co and start learning to code for free.</p>
