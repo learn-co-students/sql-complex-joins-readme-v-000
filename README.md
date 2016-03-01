@@ -50,7 +50,7 @@ ON Teacher.teacher_id = Student.teacher_id;
 This query returns only the teacher with the `id = 1` because student 2 is in the first teacher's class.
 
 ```
-teacher_id  |  student_id          
+teacher_id  |  student_id
 --------------------------
 1           |  2
 ```
@@ -69,7 +69,7 @@ ON Teacher.teacher_id = Student.teacher_id;
 ```
 
 ```
-teacher_id  |  student_id          
+teacher_id  |  student_id
 --------------------------
 1           |  2
 2           |  NULL
@@ -88,7 +88,7 @@ ON Teacher.teacher_id = Student.teacher_id;
 ```
 
 ```
-teacher_id     |  student_id          
+teacher_id     |  student_id
 --------------------------
 NULL           |  1
 1              |  2
@@ -106,7 +106,7 @@ ON Teacher.teacher_id = Student.teacher_id;
 ```
 
 ```
-teacher_id     |  student_id          
+teacher_id     |  student_id
 --------------------------
 NULL           |  1
 1              |  2
@@ -162,14 +162,14 @@ INSERT INTO students (name, teacher_id)
 
 ###Students Schema
 ```
-id               name        teacher_id            
+id               name        teacher_id
 ---------------  ----------  ----------  
-1                Dave           1           
-2                Jessie         1              
-3                Bob            1          
-4                Sara           2  
+1                Dave           1
+2                Jessie         1
+3                Bob            1
+4                Sara           2
 5                Rob            2
-6                Alexis                     
+6                Alexis
 ```
 
 ###Create Our Teachers Table
@@ -193,11 +193,11 @@ INSERT INTO teachers (name)
 ###Teachers Schema
 
 ```
-id               name                         
+id               name
 ---------------  ---------
-1                Joe                    
-2                Steven  
-3                Jeff                                  
+1                Jo
+2                Steven
+3                Jeff
 ```
 
 
@@ -213,14 +213,14 @@ This query will return all of the records in the left table (teachers) regardles
 ###Results
 
 ```
-id  teacher_name    id      name     teacher_id               
+id  teacher_name    id      name     teacher_id
 --- ------------   ----    ------    -----------
-1	   Steven		 2       Bob          1
-1	   Steven	  	 1       Dave         1	 
-1	   Steven	  	 3       Jess         1
-2	   Joe	     	 5       Rob          1
-2	   Joe	     	 4       Sara         1
-3	   Jeff	    	 NULL    NULL         NULL		              
+1	   Joe		     2       Bob          1
+1	   Joe	  	     1       Dave         1	 
+1	   Joe	  	     3       Jess         1
+2	   Steven	     5       Rob          1
+2	   Steven	     4       Sara         1
+3	   Jeff	    	 NULL    NULL         NULL
 ```
 
 
@@ -235,14 +235,14 @@ This query will return all of the records in the right table (students) regardle
 ###Results
 
 ```
-id    teacher_name   id      name     teacher_id               
+id    teacher_name   id      name     teacher_id
 ---   ------------  ----    ------    -----------
-1	     Steven		 2       Bob          1
-1	     Steven	  	 1       Dave         1	 
-1	     Steven	  	 3       Jess         1
-2	     Joe	     5       Rob          1
-2	     Joe	     4       Sara         1
-NULL     NULL	     6       Alexis       NULL		              
+1	     Joe		 2       Bob          1
+1	     Joe	  	 1       Dave         1	 
+1	     Joe	  	 3       Jess         1
+2	     Steven	     5       Rob          1
+2	     Steven	     4       Sara         1
+NULL     NULL	     6       Alexis       NULL
 ```
 
 ##Full Join
@@ -255,15 +255,15 @@ SELECT * from teachers
 This Join can be referred to as a FULL OUTER JOIN or a FULL JOIN. This query will return all of the records from both tables, joining records from the left table (teachers) that match records from the right table (students).
 
 ```
-id    teacher_name   id      name     teacher_id               
+id    teacher_name   id      name     teacher_id
 ---   ------------  ----    ------    -----------
-1	     Steven		 2       Bob          1
-1	     Steven	  	 1       Dave         1	 
+1	     Joe		 2       Bob          1
+1	     Joe	  	 1       Dave         1	 
 1	     Steven	  	 3       Jess         1
-2	     Joe	     5       Rob          1
-2	     Joe	     4       Sara         1
-3	   Jeff	    	 NULL    NULL         NULL	NULL
-NULL	NULL	6		Alexis	NULL
+2	     Steven	     5       Rob          1
+2	     Steven	     4       Sara         1
+3	     Jeff	    NULL     NULL        NULL
+NULL	 NULL	     6		 Alexis	     NULL
 ```
 
 <a href='https://learn.co/lessons/sql-complex-joins-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
