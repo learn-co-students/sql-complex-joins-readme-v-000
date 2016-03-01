@@ -195,7 +195,7 @@ INSERT INTO teachers (name)
 ```
 id               name
 ---------------  ---------
-1                Jo
+1                Joe
 2                Steven
 3                Jeff
 ```
