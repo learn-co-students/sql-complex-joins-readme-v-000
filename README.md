@@ -107,7 +107,7 @@ NULL           |  3
 ```
 
 ### Full Outer Join
-The full ***returns all of the rows from the all tables***.
+The full ***returns all of the rows from all the tables***.
 
 ```sql
 SELECT *
