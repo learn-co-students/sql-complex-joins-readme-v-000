@@ -1,6 +1,6 @@
 # Complex Joins in SQL
 
-##Objectives
+## Objectives
 1. Know what an outer join is
 1. Distinguish an inner join from an outer join
 2. Identify different types of outer joins: left, right, and full
@@ -146,8 +146,8 @@ A Full Outer Join returns all the data from all the tables, including the overla
 
 ![](http://readme-pics.s3.amazonaws.com/Full%20Outer%20Join%20Venn%20Diagram.png)
 
-##Examples
-###Create Our Students Table
+## Examples
+### Create Our Students Table
 ```
 CREATE TABLE students (
     id INTEGER PRIMARY KEY,
@@ -155,7 +155,7 @@ CREATE TABLE students (
     teacher_id INTEGER);
 ```
 
-###Insert Students
+### Insert Students
 ```
 INSERT INTO students (name, teacher_id)
     VALUES ("Dave", 1);
@@ -171,7 +171,7 @@ INSERT INTO students (name, teacher_id)
     VALUES ("Alexis",  NULL);
 ```
 
-###Students Schema
+### Students Schema
 ```
 id               name        teacher_id
 ---------------  ----------  ----------
@@ -183,14 +183,14 @@ id               name        teacher_id
 6                Alexis
 ```
 
-###Create Our Teachers Table
+### Create Our Teachers Table
 ```
 CREATE TABLE teachers (
     id INTEGER PRIMARY KEY,
     name TEXT);
 ```
 
-###Insert Into Teachers
+### Insert Into Teachers
 
 ```
 INSERT INTO teachers (name)
@@ -201,7 +201,7 @@ INSERT INTO teachers (name)
     VALUES ("Jeff");
 ```
 
-###Teachers Schema
+### Teachers Schema
 
 ```
 id               name
@@ -212,7 +212,7 @@ id               name
 ```
 
 
-###Left Outer Join
+### Left Outer Join
 
 ```
 SELECT * FROM teachers
@@ -221,7 +221,7 @@ SELECT * FROM teachers
 
 This query will return all of the records in the left table (teachers) regardless if any of those records have a match in the right table (students). It will also return any matching records from the right table. So for our example, it first returns all of the teachers followed by any student that has a `teacher_id`. You can see that Alexis was not returned because her `teacher_id` column is `NULL`.
 
-###Results
+### Results
 
 ```
 id  teacher_name    id      name     teacher_id
@@ -235,7 +235,7 @@ id  teacher_name    id      name     teacher_id
 ```
 
 
-##Right Outer Join
+## Right Outer Join
 
 ```
 SELECT * from teachers
@@ -243,7 +243,7 @@ SELECT * from teachers
 ```
 This query will return all of the records in the right table (students) regardless if any of those records have a match in the left table (teachers). It will also return any matching records from the left table. You can see that all of the students were returned, but this time Jeff was left out.
 
-###Results
+### Results
 
 ```
 id    teacher_name   id      name     teacher_id
@@ -256,7 +256,7 @@ id    teacher_name   id      name     teacher_id
 NULL     NULL	     6       Alexis       NULL
 ```
 
-##Full Join
+## Full Join
 
 ```
 SELECT * from teachers
@@ -276,9 +276,5 @@ id    teacher_name   id      name     teacher_id
 3	     Jeff	    NULL     NULL        NULL
 NULL	 NULL	     6		 Alexis	     NULL
 ```
-
-<a href='https://learn.co/lessons/sql-complex-joins-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-complex-joins-readme'>SQL Complex Joins</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/sql-complex-joins-readme'>SQL Complex Joins</a> on Learn.co and start learning to code for free.</p>
