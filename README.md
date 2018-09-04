@@ -270,7 +270,7 @@ id    teacher_name   id      name     teacher_id
 ---   ------------  ----    ------    -----------
 1	     Joe		 3       Bob          1
 1	     Joe	  	 1       Dave         1
-1	     Steven	  	 2       Jessie       1
+1	     Joe	  	 2       Jessie       1
 2	     Steven	     5       George       2
 2	     Steven	     4       Sara         2
 3	     Jeff	    NULL     NULL        NULL
