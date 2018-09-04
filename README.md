@@ -126,7 +126,7 @@ NULL           |  3
 3              |  NULL
 ```
 
-##Venn Diagrams
+## Venn Diagrams
 
 It is helpful to think about our queries as a Venn Diagram. Each table can be represented by a circle.
 
