@@ -56,7 +56,7 @@ tables:
 
 ```text
 TEACHERS TABLE             STUDENTS TABLE
-teacher_id                 student_id   teacher_id
+id                 student_id   teacher_id
 ---------------            ------------------------
 1                          1            NULL
 2                          2            1
@@ -69,17 +69,19 @@ Let's look at an inner join.
 SELECT *
 FROM Teachers
 INNER JOIN Students
-ON Teachers.teacher_id = Students.teacher_id;
+ON Teachers.id = Students.teacher_id;
 ```
 
 This query returns only the teacher with the `id = 1` because student 2 is in
 the first teacher's class.
 
 ```text
-teacher_id  |  student_id
+id  |  student_id |  teacher_id
 --------------------------
-1           |  2
+1           |  2  |  1
 ```
+
+> **Note**: Since we're _joining_ tables, running this example SQL comman will return a result with both an _id_ and a _teacher_id_, even though they are the same.
 
 ### Outer Join
 
