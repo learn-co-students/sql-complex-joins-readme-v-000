@@ -69,7 +69,7 @@ Let's look at an inner join.
 SELECT *
 FROM Teachers
 INNER JOIN Students
-ON Teacher.teacher_id = Student.teacher_id;
+ON Teachers.teacher_id = Students.teacher_id;
 ```
 
 This query returns only the teacher with the `id = 1` because student 2 is in
@@ -106,7 +106,7 @@ the left-most (i.e. first mentioned) table***.
 SELECT *
 FROM Teachers
 LEFT OUTER JOIN Students
-ON Teacher.teacher_id = Student.teacher_id;
+ON Teachers.teacher_id = Students.teacher_id;
 ```
 
 ```text
@@ -130,7 +130,7 @@ last-mentioned) table***. Sticking with our example:
 SELECT *
 FROM Teachers
 RIGHT OUTER JOIN Students
-ON Teacher.teacher_id = Student.teacher_id;
+ON Teachers.teacher_id = Students.teacher_id;
 ```
 
 ```text
@@ -149,7 +149,7 @@ The full ***returns all of the rows from all the tables***.
 SELECT *
 FROM Teachers
 FULL OUTER JOIN Students
-ON Teacher.teacher_id = Student.teacher_id;
+ON Teachers.teacher_id = Students.teacher_id;
 ```
 
 ```text
@@ -259,8 +259,8 @@ id               name
 ### Left Outer Join
 
 ```sql
-SELECT * FROM teachers
-   LEFT OUTER JOIN students on teachers.id = students.teacher_id;
+SELECT * FROM Teachers
+   LEFT OUTER JOIN Students on Teachers.id = Students.teacher_id;
 ```
 
 This query will return all of the records in the left table (teachers)
@@ -286,8 +286,8 @@ id  teacher_name    id      name     teacher_id
 ## Right Outer Join
 
 ```sql
-SELECT * from teachers
-   RIGHT OUTER JOIN students on teachers.id = students.teacher_id;
+SELECT * from Teachers
+   RIGHT OUTER JOIN Students on Teachers.id = Students.teacher_id;
 ```
 
 This query will return all of the records in the right table (students)
@@ -311,11 +311,11 @@ NULL     NULL       6       Alexis       NULL
 ## Full Join
 
 ```text
-SELECT * from teachers
-   FULL OUTER JOIN students on teachers.id = students.teacher_id;
+SELECT * from Teachers
+   FULL OUTER JOIN Students on Teachers.id = Students.teacher_id;
 ```
 
-This Join can be referred to as a FULL OUTER JOIN or a FULL JOIN. This query will return all of the records from both tables, joining records from the left table (teachers) that match records from the right table (students).
+This Join can be referred to as a FULL OUTER JOIN or a FULL JOIN. This query will return all of the records from both tables, joining records from the left table (`Teachers`) that match records from the right table (`Students`).
 
 ```text
 id    teacher_name   id      name     teacher_id
