@@ -277,9 +277,9 @@ column is `NULL`.
 ```text
 id  teacher_name    id      name     teacher_id
 --- ------------   ----    ------    -----------
-1     Joe         3       Bob          1
-1     Joe           1       Dave         1
-1     Joe           2       Jessie       1
+1     Joe          3       Bob          1
+1     Joe          1       Dave         1
+1     Joe          2       Jessie       1
 2     Steven       5       George       2
 2     Steven       4       Sara         2
 3     Jeff         NULL    NULL         NULL
@@ -302,12 +302,12 @@ of the students were returned, but this time Jeff was left out.
 ```text
 id    teacher_name   id      name     teacher_id
 ---   ------------  ----    ------    -----------
-1       Joe     3       Bob          1
-1       Joe       1       Dave         1
-1       Joe       2       Jessie       1
-2       Steven       5       George       2
-2       Steven       4       Sara         2
-NULL     NULL       6       Alexis       NULL
+1       Joe         3       Bob          1
+1       Joe         1       Dave         1
+1       Joe         2       Jessie       1
+2       Steven      5       George       2
+2       Steven      4       Sara         2
+NULL    NULL        6       Alexis       NULL
 ```
 
 ## Full Join
@@ -322,13 +322,13 @@ This Join can be referred to as a FULL OUTER JOIN or a FULL JOIN. This query wil
 ```text
 id    teacher_name   id      name     teacher_id
 ---   ------------  ----    ------    -----------
-1       Joe     3       Bob          1
-1       Joe       1       Dave         1
-1       Joe       2       Jessie       1
+1       Joe          3       Bob          1
+1       Joe          1       Dave         1
+1       Joe          2       Jessie       1
 2       Steven       5       George       2
 2       Steven       4       Sara         2
-3       Jeff      NULL     NULL        NULL
-NULL   NULL       6     Alexis       NULL
+3       Jeff         NULL    NULL         NULL
+NULL    NULL         6       Alexis       NULL
 ```
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/sql-complex-joins-readme'>SQL Complex Joins</a> on Learn.co and start learning to code for free.</p>
