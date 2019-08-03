@@ -77,7 +77,7 @@ the first teacher's class.
 
 ```text
 id  |  student_id |  teacher_id
---------------------------
+--------------------------------
 1   |  2          |  1
 ```
 
@@ -137,7 +137,7 @@ ON Teachers.teacher_id = Students.teacher_id;
 
 ```text
 teacher_id     |  student_id
---------------------------
+-----------------------------
 NULL           |  1
 1              |  2
 NULL           |  3
@@ -156,7 +156,7 @@ ON Teachers.teacher_id = Students.teacher_id;
 
 ```text
 teacher_id     |  student_id
---------------------------
+-----------------------------
 NULL           |  1
 1              |  2
 NULL           |  3
