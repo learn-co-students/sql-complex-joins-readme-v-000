@@ -104,6 +104,10 @@ This is the most common outer join and the one you'll use most often. This
 returns the normal inner join result and also ***returns all of the rows from
 the left-most (i.e. first mentioned) table***.
 
+We also make use of the `as` keyword which allows us to specify how our
+returned data shows up. You'll see how the `as` name helps make the output
+easier to read.
+
 ```sql
 SELECT
   Teachers.id as teacher_id,
