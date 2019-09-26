@@ -105,10 +105,12 @@ returns the normal inner join result and also ***returns all of the rows from
 the left-most (i.e. first mentioned) table***.
 
 ```sql
-SELECT *
+SELECT
+  Teachers.id as teacher_id,
+  Students.id as student_id
 FROM Teachers
 LEFT OUTER JOIN Students
-ON Teachers.teacher_id = Students.teacher_id;
+ON Teachers.id = Students.teacher_id;
 ```
 
 ```text
@@ -129,10 +131,12 @@ difference being that it ***returns all of the rows from the right-most (i.e.
 last-mentioned) table***. Sticking with our example:
 
 ```sql
-SELECT *
+SELECT
+  Teachers.id as teacher_id,
+  Students.id as student_id
 FROM Teachers
 RIGHT OUTER JOIN Students
-ON Teachers.teacher_id = Students.teacher_id;
+ON Teachers.id = Students.teacher_id;
 ```
 
 ```text
@@ -148,10 +152,12 @@ NULL           |  3
 The full ***returns all of the rows from all the tables***.
 
 ```sql
-SELECT *
+SELECT
+  Teachers.id as teacher_id,
+  Students.id as student_id
 FROM Teachers
 FULL OUTER JOIN Students
-ON Teachers.teacher_id = Students.teacher_id;
+ON Teachers.id = Students.teacher_id;
 ```
 
 ```text
