@@ -63,7 +63,22 @@ id                 student_id   teacher_id
 3                          3            NULL
 ```
 
-Let's look at an inner join.
+**Note**: If you would like to follow along in the terminal, first run `sqlite3`
+to open the Command Line Shell for SQLite3. Once opened, run the following queries
+to create the two tables:
+
+```sql
+CREATE TABLE Teachers(id);
+CREATE TABLE Students(student_id, teacher_id);
+INSERT INTO Teachers VALUES (1);
+INSERT INTO Teachers VALUES (2);
+INSERT INTO Teachers VALUES (3);
+INSERT INTO Students VALUES (1, NULL);
+INSERT INTO Students VALUES (2, 1);
+INSERT INTO Students VALUES (3, NULL);
+```
+
+First, let's look at an inner join:
 
 ```sql
 SELECT *
