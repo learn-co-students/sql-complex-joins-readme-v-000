@@ -126,7 +126,7 @@ easier to read.
 ```sql
 SELECT
   Teachers.id as teacher_id,
-  Students.id as student_id
+  Students.student_id
 FROM Teachers
 LEFT OUTER JOIN Students
 ON Teachers.id = Students.teacher_id;
