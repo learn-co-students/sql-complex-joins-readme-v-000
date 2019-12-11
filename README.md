@@ -56,7 +56,7 @@ tables:
 
 ```text
 TEACHERS TABLE             STUDENTS TABLE
-id                 student_id   teacher_id
+id                         student_id   teacher_id
 ---------------            ------------------------
 1                          1            NULL
 2                          2            1
@@ -92,11 +92,11 @@ the first teacher's class.
 
 ```text
 id  |  student_id |  teacher_id
---------------------------
-1           |  2  |  1
+--------------------------------
+1   |  2          |  1
 ```
 
-> **Note**: Since we're _joining_ tables, running this example SQL comman will return a result with both an _id_ and a _teacher_id_, even though they are the same.
+> **Note**: Since we're _joining_ tables, running this example SQL command will return a result with both an _id_ and a _teacher_id_, even though they are the same.
 
 ### Outer Join
 
@@ -160,7 +160,7 @@ ON Teachers.id = Students.teacher_id;
 
 ```text
 teacher_id     |  student_id
---------------------------
+-----------------------------
 NULL           |  1
 1              |  2
 NULL           |  3
@@ -181,7 +181,7 @@ ON Teachers.id = Students.teacher_id;
 
 ```text
 teacher_id     |  student_id
---------------------------
+-----------------------------
 NULL           |  1
 1              |  2
 NULL           |  3
