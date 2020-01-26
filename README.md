@@ -356,4 +356,7 @@ id    teacher_name   id      name     teacher_id
 NULL    NULL         6       Alexis       NULL
 ```
 
+## More Practice
+[30 day SQL challenge using real-world data](https://dev.to/zchtodd/sql30-day-1-wildfires-2b02)
+
 <p class='util--hide'>View <a href='https://learn.co/lessons/sql-complex-joins-readme'>SQL Complex Joins</a> on Learn.co and start learning to code for free.</p>
